@@ -1,0 +1,623 @@
+2023-09-03 20:25:12.985  INFO 81040 --- [main] SpringbootIntegrationMqttDemoApplication : Starting SpringbootIntegrationMqttDemoApplication using Java 11 on nzc with PID 81040 (F:\idea_project\springboot-integration-mqtt-demo\target\classes started by wyh in F:\idea_project\springboot-integration-mqtt-demo)
+2023-09-03 20:25:12.987  INFO 81040 --- [main] SpringbootIntegrationMqttDemoApplication : No active profile set, falling back to 1 default profile: "default"
+2023-09-03 20:25:13.585  INFO 81040 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-03 20:25:13.593  INFO 81040 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-03 20:25:13.884  INFO 81040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9876 (http)
+2023-09-03 20:25:13.885  INFO 81040 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-09-03 20:25:13.885  INFO 81040 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-09-03 20:25:13.887  INFO 81040 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-09-03 20:25:13.898  INFO 81040 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-09-03 20:25:13.905  INFO 81040 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-03 20:25:13.905  INFO 81040 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-09-03 20:25:13.969  INFO 81040 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-03 20:25:13.969  INFO 81040 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 948 ms
+2023-09-03 20:25:14.143  WARN 81040 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mqttTopicServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup="", name="", description="", authenticationType=CONTAINER, type=java.lang.Object.class, mappedName="")}
+2023-09-03 20:25:14.146  INFO 81040 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-03 20:25:14.156  INFO 81040 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-09-03 20:25:14.170 ERROR 81040 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter' in your configuration.
+
+2023-09-03 20:26:42.543  INFO 90804 --- [main] SpringbootIntegrationMqttDemoApplication : Starting SpringbootIntegrationMqttDemoApplication using Java 11 on nzc with PID 90804 (F:\idea_project\springboot-integration-mqtt-demo\target\classes started by wyh in F:\idea_project\springboot-integration-mqtt-demo)
+2023-09-03 20:26:42.546  INFO 90804 --- [main] SpringbootIntegrationMqttDemoApplication : No active profile set, falling back to 1 default profile: "default"
+2023-09-03 20:26:43.077  INFO 90804 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-03 20:26:43.084  INFO 90804 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-03 20:26:43.344  INFO 90804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9876 (http)
+2023-09-03 20:26:43.345  INFO 90804 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-09-03 20:26:43.345  INFO 90804 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-09-03 20:26:43.348  INFO 90804 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-09-03 20:26:43.355  INFO 90804 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-09-03 20:26:43.361  INFO 90804 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-03 20:26:43.361  INFO 90804 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-09-03 20:26:43.421  INFO 90804 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-03 20:26:43.421  INFO 90804 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 844 ms
+2023-09-03 20:26:43.888  INFO 90804 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-09-03 20:26:43.888  INFO 90804 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'spring-integration-mqtt.errorChannel' has 1 subscriber(s).
+2023-09-03 20:26:43.888  INFO 90804 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-09-03 20:26:43.888  INFO 90804 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {transformer} as a subscriber to the 'inboundTest' channel
+2023-09-03 20:26:43.888  INFO 90804 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.inboundTest' has 1 subscriber(s).
+2023-09-03 20:26:43.888  INFO 90804 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestMethodRouterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; defined in: 'class path resource [com/example/mqtt/test/MyTestRouter.class]'; from source: 'bean method myTestMethodRouterFlow'
+2023-09-03 20:26:43.888  INFO 90804 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {router} as a subscriber to the 'myTestMethodRouterFlow.channel#0' channel
+2023-09-03 20:26:43.889  INFO 90804 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.myTestMethodRouterFlow.channel#0' has 1 subscriber(s).
+2023-09-03 20:26:43.889  INFO 90804 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestMethodRouterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; defined in: 'class path resource [com/example/mqtt/test/MyTestRouter.class]'; from source: 'bean method myTestMethodRouterFlow'
+2023-09-03 20:26:43.889  INFO 90804 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttInboundConfiguration.defaultInboundHandler.serviceActivator} as a subscriber to the 'default' channel
+2023-09-03 20:26:43.889  INFO 90804 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.default' has 1 subscriber(s).
+2023-09-03 20:26:43.889  INFO 90804 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttInboundConfiguration.defaultInboundHandler.serviceActivator'
+2023-09-03 20:26:43.889  INFO 90804 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttOutboundConfiguration.mqttOutbound.serviceActivator} as a subscriber to the 'outbound' channel
+2023-09-03 20:26:43.889  INFO 90804 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.outbound' has 1 subscriber(s).
+2023-09-03 20:26:43.889  INFO 90804 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttOutboundConfiguration.mqttOutbound.serviceActivator'
+2023-09-03 20:26:43.889  INFO 90804 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:myTestServiceImpl.handleInboundTest1.serviceActivator} as a subscriber to the 'inboundTaskTest1' channel
+2023-09-03 20:26:43.889  INFO 90804 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.inboundTaskTest1' has 1 subscriber(s).
+2023-09-03 20:26:43.889  INFO 90804 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestServiceImpl.handleInboundTest1.serviceActivator'
+2023-09-03 20:26:43.889  INFO 90804 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:myTestServiceImpl.handleOutboundTest.serviceActivator} as a subscriber to the 'outboundTest' channel
+2023-09-03 20:26:43.889  INFO 90804 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.outboundTest' has 1 subscriber(s).
+2023-09-03 20:26:43.889  INFO 90804 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestServiceImpl.handleOutboundTest.serviceActivator'
+2023-09-03 20:26:43.889  INFO 90804 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:myTestServiceImpl.handleInboundTaskTest1ToDemo1.serviceActivator} as a subscriber to the 'inboundTaskTest1ToDemo1' channel
+2023-09-03 20:26:43.889  INFO 90804 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.inboundTaskTest1ToDemo1' has 1 subscriber(s).
+2023-09-03 20:26:43.889  INFO 90804 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestServiceImpl.handleInboundTaskTest1ToDemo1.serviceActivator'
+2023-09-03 20:26:43.889  INFO 90804 --- [main] ProxyFactoryBean$MethodInvocationGateway : started bean 'IMqttMessageGateway#publish(String, byte[])'
+2023-09-03 20:26:43.891  INFO 90804 --- [main] ProxyFactoryBean$MethodInvocationGateway : started bean 'IMqttMessageGateway#publish(String, byte[], int)'
+2023-09-03 20:26:43.891  INFO 90804 --- [main] o.s.i.gateway.GatewayProxyFactoryBean    : started bean 'IMqttMessageGateway'
+2023-09-03 20:26:44.284  INFO 90804 --- [main] .m.i.MqttPahoMessageDrivenChannelAdapter : started bean 'adapter'; defined in: 'class path resource [com/example/mqtt/config/MqttInboundConfiguration.class]'; from source: 'com.example.mqtt.config.MqttInboundConfiguration.mqttInbound()'
+2023-09-03 20:26:44.296  INFO 90804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9876 (http) with context path ''
+2023-09-03 20:26:44.303  INFO 90804 --- [main] SpringbootIntegrationMqttDemoApplication : Started SpringbootIntegrationMqttDemoApplication in 2.065 seconds (JVM running for 2.93)
+2023-09-03 20:28:35.301  INFO 80764 --- [main] SpringbootIntegrationMqttDemoApplication : Starting SpringbootIntegrationMqttDemoApplication using Java 11 on nzc with PID 80764 (F:\idea_project\springboot-integration-mqtt-demo\target\classes started by wyh in F:\idea_project\springboot-integration-mqtt-demo)
+2023-09-03 20:28:35.305  INFO 80764 --- [main] SpringbootIntegrationMqttDemoApplication : No active profile set, falling back to 1 default profile: "default"
+2023-09-03 20:28:36.474  INFO 80764 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-03 20:28:36.513  INFO 80764 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-03 20:28:37.290  INFO 80764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9876 (http)
+2023-09-03 20:28:37.291  INFO 80764 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-09-03 20:28:37.292  INFO 80764 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-09-03 20:28:37.292  INFO 80764 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-09-03 20:28:37.300  INFO 80764 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-09-03 20:28:37.327  INFO 80764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-03 20:28:37.327  INFO 80764 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-09-03 20:28:37.443  INFO 80764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-03 20:28:37.443  INFO 80764 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2069 ms
+2023-09-03 20:28:38.479  INFO 80764 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-09-03 20:28:38.479  INFO 80764 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'spring-integration-mqtt.errorChannel' has 1 subscriber(s).
+2023-09-03 20:28:38.480  INFO 80764 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-09-03 20:28:38.480  INFO 80764 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {transformer} as a subscriber to the 'inboundTest' channel
+2023-09-03 20:28:38.480  INFO 80764 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.inboundTest' has 1 subscriber(s).
+2023-09-03 20:28:38.480  INFO 80764 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestMethodRouterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; defined in: 'class path resource [com/example/mqtt/test/MyTestRouter.class]'; from source: 'bean method myTestMethodRouterFlow'
+2023-09-03 20:28:38.480  INFO 80764 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {router} as a subscriber to the 'myTestMethodRouterFlow.channel#0' channel
+2023-09-03 20:28:38.480  INFO 80764 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.myTestMethodRouterFlow.channel#0' has 1 subscriber(s).
+2023-09-03 20:28:38.480  INFO 80764 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestMethodRouterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; defined in: 'class path resource [com/example/mqtt/test/MyTestRouter.class]'; from source: 'bean method myTestMethodRouterFlow'
+2023-09-03 20:28:38.480  INFO 80764 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttInboundConfiguration.defaultInboundHandler.serviceActivator} as a subscriber to the 'default' channel
+2023-09-03 20:28:38.480  INFO 80764 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.default' has 1 subscriber(s).
+2023-09-03 20:28:38.480  INFO 80764 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttInboundConfiguration.defaultInboundHandler.serviceActivator'
+2023-09-03 20:28:38.480  INFO 80764 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttOutboundConfiguration.mqttOutbound.serviceActivator} as a subscriber to the 'outbound' channel
+2023-09-03 20:28:38.480  INFO 80764 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.outbound' has 1 subscriber(s).
+2023-09-03 20:28:38.480  INFO 80764 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttOutboundConfiguration.mqttOutbound.serviceActivator'
+2023-09-03 20:28:38.480  INFO 80764 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:myTestServiceImpl.handleInboundTaskTest1ToDemo1.serviceActivator} as a subscriber to the 'inboundTaskTest1ToDemo1' channel
+2023-09-03 20:28:38.480  INFO 80764 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.inboundTaskTest1ToDemo1' has 1 subscriber(s).
+2023-09-03 20:28:38.481  INFO 80764 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestServiceImpl.handleInboundTaskTest1ToDemo1.serviceActivator'
+2023-09-03 20:28:38.481  INFO 80764 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:myTestServiceImpl.handleOutboundTest.serviceActivator} as a subscriber to the 'outboundTest' channel
+2023-09-03 20:28:38.481  INFO 80764 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.outboundTest' has 1 subscriber(s).
+2023-09-03 20:28:38.481  INFO 80764 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestServiceImpl.handleOutboundTest.serviceActivator'
+2023-09-03 20:28:38.481  INFO 80764 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:myTestServiceImpl.handleInboundTest1.serviceActivator} as a subscriber to the 'inboundTaskTest1' channel
+2023-09-03 20:28:38.481  INFO 80764 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.inboundTaskTest1' has 1 subscriber(s).
+2023-09-03 20:28:38.481  INFO 80764 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestServiceImpl.handleInboundTest1.serviceActivator'
+2023-09-03 20:28:38.481  INFO 80764 --- [main] ProxyFactoryBean$MethodInvocationGateway : started bean 'IMqttMessageGateway#publish(String, byte[])'
+2023-09-03 20:28:38.482  INFO 80764 --- [main] ProxyFactoryBean$MethodInvocationGateway : started bean 'IMqttMessageGateway#publish(String, byte[], int)'
+2023-09-03 20:28:38.482  INFO 80764 --- [main] o.s.i.gateway.GatewayProxyFactoryBean    : started bean 'IMqttMessageGateway'
+2023-09-03 20:28:38.871  INFO 80764 --- [main] .m.i.MqttPahoMessageDrivenChannelAdapter : started bean 'adapter'; defined in: 'class path resource [com/example/mqtt/config/MqttInboundConfiguration.class]'; from source: 'com.example.mqtt.config.MqttInboundConfiguration.mqttInbound()'
+2023-09-03 20:28:38.898  INFO 80764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9876 (http) with context path ''
+2023-09-03 20:28:38.909  INFO 80764 --- [main] SpringbootIntegrationMqttDemoApplication : Started SpringbootIntegrationMqttDemoApplication in 5.184 seconds (JVM running for 15.969)
+2023-09-03 20:30:28.304  INFO 80764 --- [http-nio-9876-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-03 20:30:28.306  INFO 80764 --- [http-nio-9876-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-03 20:30:28.308  INFO 80764 --- [http-nio-9876-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-03 20:30:57.624 ERROR 80764 --- [pool-3-thread-1] o.s.integration.handler.LoggingHandler   : org.springframework.integration.MessageDispatchingException: Dispatcher has no subscribers, failedMessage=GenericMessage [payload=byte[148], headers={mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=1ac8b4a8-e995-733b-c5ba-d93b7fb8cf1e, mqtt_receivedTopic=mysys/product/1/status, mqtt_receivedQos=0, timestamp=1693744257620}]
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.doDispatch(UnicastingDispatcher.java:139)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.access$000(UnicastingDispatcher.java:55)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher$1.run(UnicastingDispatcher.java:114)
+	at org.springframework.integration.util.ErrorHandlingTaskExecutor.lambda$execute$0(ErrorHandlingTaskExecutor.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2023-09-03 20:32:29.596 ERROR 80764 --- [pool-3-thread-2] o.s.integration.handler.LoggingHandler   : org.springframework.integration.MessageDispatchingException: Dispatcher has no subscribers, failedMessage=GenericMessage [payload=byte[148], headers={mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=1f72f98b-63a0-7121-6161-f6e4ed208c5c, mqtt_receivedTopic=mysys/product/1/status, mqtt_receivedQos=0, timestamp=1693744349595}]
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.doDispatch(UnicastingDispatcher.java:139)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.access$000(UnicastingDispatcher.java:55)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher$1.run(UnicastingDispatcher.java:114)
+	at org.springframework.integration.util.ErrorHandlingTaskExecutor.lambda$execute$0(ErrorHandlingTaskExecutor.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2023-09-03 20:33:07.613 ERROR 80764 --- [pool-3-thread-3] o.s.integration.handler.LoggingHandler   : org.springframework.integration.MessageDispatchingException: Dispatcher has no subscribers, failedMessage=GenericMessage [payload=byte[148], headers={mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=9f8af507-27b2-f899-2d0c-1949a9c07c44, mqtt_receivedTopic=mysys/product/1/status, mqtt_receivedQos=0, timestamp=1693744387613}]
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.doDispatch(UnicastingDispatcher.java:139)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.access$000(UnicastingDispatcher.java:55)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher$1.run(UnicastingDispatcher.java:114)
+	at org.springframework.integration.util.ErrorHandlingTaskExecutor.lambda$execute$0(ErrorHandlingTaskExecutor.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2023-09-03 20:35:06.885 ERROR 80764 --- [pool-3-thread-4] o.s.integration.handler.LoggingHandler   : org.springframework.integration.MessageDispatchingException: Dispatcher has no subscribers, failedMessage=GenericMessage [payload=byte[148], headers={mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=9ffea37d-ec5d-d503-4d20-ab1e79f6d031, mqtt_receivedTopic=mysys/product/1/status, mqtt_receivedQos=0, timestamp=1693744506885}]
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.doDispatch(UnicastingDispatcher.java:139)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.access$000(UnicastingDispatcher.java:55)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher$1.run(UnicastingDispatcher.java:114)
+	at org.springframework.integration.util.ErrorHandlingTaskExecutor.lambda$execute$0(ErrorHandlingTaskExecutor.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2023-09-03 20:40:34.607  INFO 73860 --- [main] SpringbootIntegrationMqttDemoApplication : Starting SpringbootIntegrationMqttDemoApplication using Java 11 on nzc with PID 73860 (F:\idea_project\springboot-integration-mqtt-demo\target\classes started by wyh in F:\idea_project\springboot-integration-mqtt-demo)
+2023-09-03 20:40:34.609  INFO 73860 --- [main] SpringbootIntegrationMqttDemoApplication : No active profile set, falling back to 1 default profile: "default"
+2023-09-03 20:40:35.446  INFO 73860 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-03 20:40:35.475  INFO 73860 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-03 20:40:36.006  INFO 73860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9876 (http)
+2023-09-03 20:40:36.007  INFO 73860 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-09-03 20:40:36.008  INFO 73860 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-09-03 20:40:36.008  INFO 73860 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-09-03 20:40:36.013  INFO 73860 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-09-03 20:40:36.031  INFO 73860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-03 20:40:36.032  INFO 73860 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-09-03 20:40:36.111  INFO 73860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-03 20:40:36.111  INFO 73860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1444 ms
+2023-09-03 20:40:37.098  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-09-03 20:40:37.098  INFO 73860 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'spring-integration-mqtt.errorChannel' has 1 subscriber(s).
+2023-09-03 20:40:37.099  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-09-03 20:40:37.099  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {transformer} as a subscriber to the 'inboundEvents' channel
+2023-09-03 20:40:37.099  INFO 73860 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.inboundEvents' has 1 subscriber(s).
+2023-09-03 20:40:37.099  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'eventsMethodRouterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; defined in: 'class path resource [com/example/mqtt/handler/EventsRouter.class]'; from source: 'bean method eventsMethodRouterFlow'
+2023-09-03 20:40:37.099  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {router} as a subscriber to the 'eventsMethodRouterFlow.channel#0' channel
+2023-09-03 20:40:37.099  INFO 73860 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.eventsMethodRouterFlow.channel#0' has 1 subscriber(s).
+2023-09-03 20:40:37.099  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'eventsMethodRouterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; defined in: 'class path resource [com/example/mqtt/handler/EventsRouter.class]'; from source: 'bean method eventsMethodRouterFlow'
+2023-09-03 20:40:37.099  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {transformer} as a subscriber to the 'inboundTest' channel
+2023-09-03 20:40:37.099  INFO 73860 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.inboundTest' has 1 subscriber(s).
+2023-09-03 20:40:37.099  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestMethodRouterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; defined in: 'class path resource [com/example/mqtt/test/MyTestRouter.class]'; from source: 'bean method myTestMethodRouterFlow'
+2023-09-03 20:40:37.099  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {router} as a subscriber to the 'myTestMethodRouterFlow.channel#0' channel
+2023-09-03 20:40:37.099  INFO 73860 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.myTestMethodRouterFlow.channel#0' has 1 subscriber(s).
+2023-09-03 20:40:37.099  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestMethodRouterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; defined in: 'class path resource [com/example/mqtt/test/MyTestRouter.class]'; from source: 'bean method myTestMethodRouterFlow'
+2023-09-03 20:40:37.099  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttInboundConfiguration.defaultInboundHandler.serviceActivator} as a subscriber to the 'default' channel
+2023-09-03 20:40:37.100  INFO 73860 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.default' has 1 subscriber(s).
+2023-09-03 20:40:37.100  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttInboundConfiguration.defaultInboundHandler.serviceActivator'
+2023-09-03 20:40:37.100  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttOutboundConfiguration.mqttOutbound.serviceActivator} as a subscriber to the 'outbound' channel
+2023-09-03 20:40:37.100  INFO 73860 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.outbound' has 1 subscriber(s).
+2023-09-03 20:40:37.100  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttOutboundConfiguration.mqttOutbound.serviceActivator'
+2023-09-03 20:40:37.100  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:eventsRouter.replyEventsOutbound.serviceActivator} as a subscriber to the 'outboundEvents' channel
+2023-09-03 20:40:37.100  INFO 73860 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.outboundEvents' has 1 subscriber(s).
+2023-09-03 20:40:37.100  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'eventsRouter.replyEventsOutbound.serviceActivator'
+2023-09-03 20:40:37.100  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {router:inboundMessageRouter.determineTargetChannels.router} as a subscriber to the 'inbound' channel
+2023-09-03 20:40:37.100  INFO 73860 --- [main] o.s.integration.channel.ExecutorChannel  : Channel 'spring-integration-mqtt.inbound' has 1 subscriber(s).
+2023-09-03 20:40:37.101  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'inboundMessageRouter.determineTargetChannels.router'
+2023-09-03 20:40:37.101  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:myTestServiceImpl.handleInboundTest1.serviceActivator} as a subscriber to the 'inboundTaskTest1' channel
+2023-09-03 20:40:37.101  INFO 73860 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.inboundTaskTest1' has 1 subscriber(s).
+2023-09-03 20:40:37.101  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestServiceImpl.handleInboundTest1.serviceActivator'
+2023-09-03 20:40:37.101  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:myTestServiceImpl.handleOutboundTest.serviceActivator} as a subscriber to the 'outboundTest' channel
+2023-09-03 20:40:37.101  INFO 73860 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.outboundTest' has 1 subscriber(s).
+2023-09-03 20:40:37.101  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestServiceImpl.handleOutboundTest.serviceActivator'
+2023-09-03 20:40:37.101  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:myTestServiceImpl.handleInboundTaskTest1ToDemo1.serviceActivator} as a subscriber to the 'inboundTaskTest1ToDemo1' channel
+2023-09-03 20:40:37.101  INFO 73860 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.inboundTaskTest1ToDemo1' has 1 subscriber(s).
+2023-09-03 20:40:37.101  INFO 73860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestServiceImpl.handleInboundTaskTest1ToDemo1.serviceActivator'
+2023-09-03 20:40:37.101  INFO 73860 --- [main] ProxyFactoryBean$MethodInvocationGateway : started bean 'IMqttMessageGateway#publish(String, byte[])'
+2023-09-03 20:40:37.101  INFO 73860 --- [main] ProxyFactoryBean$MethodInvocationGateway : started bean 'IMqttMessageGateway#publish(String, byte[], int)'
+2023-09-03 20:40:37.101  INFO 73860 --- [main] o.s.i.gateway.GatewayProxyFactoryBean    : started bean 'IMqttMessageGateway'
+2023-09-03 20:40:37.487  INFO 73860 --- [main] .m.i.MqttPahoMessageDrivenChannelAdapter : started bean 'adapter'; defined in: 'class path resource [com/example/mqtt/config/MqttInboundConfiguration.class]'; from source: 'com.example.mqtt.config.MqttInboundConfiguration.mqttInbound()'
+2023-09-03 20:40:37.511  INFO 73860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9876 (http) with context path ''
+2023-09-03 20:40:37.519  INFO 73860 --- [main] SpringbootIntegrationMqttDemoApplication : Started SpringbootIntegrationMqttDemoApplication in 3.661 seconds (JVM running for 5.449)
+2023-09-03 20:40:40.465  INFO 73860 --- [http-nio-9876-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-03 20:40:40.466  INFO 73860 --- [http-nio-9876-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-03 20:40:40.467  INFO 73860 --- [http-nio-9876-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-03 20:40:48.395  INFO 73860 --- [pool-3-thread-1] o.s.i.h.s.MessagingMethodInvokerHelper   : Overriding default instance of MessageHandlerMethodFactory with provided one.
+2023-09-03 20:40:48.411  INFO 73860 --- [pool-3-thread-1] c.e.mqtt.handler.InboundMessageRouter    : received topic :mysys/product/1/status 	 payload :{
+  "tid": "123",
+  "bid":"123",
+  "method":"test1",
+  "timestamp":"1690348247659",
+  "data":"hello3333",
+  "gateway":"hello3333",
+  "needReply":0
+}
+2023-09-03 20:40:48.433  INFO 73860 --- [pool-3-thread-1] c.e.m.config.MqttInboundConfiguration    : The default channel does not handle messages.
+Topic: mysys/product/1/status
+Payload: [B@3c690240
+2023-09-03 20:56:44.899  INFO 13008 --- [main] SpringbootIntegrationMqttDemoApplication : Starting SpringbootIntegrationMqttDemoApplication using Java 11 on nzc with PID 13008 (F:\idea_project\springboot-integration-mqtt-demo\target\classes started by wyh in F:\idea_project\springboot-integration-mqtt-demo)
+2023-09-03 20:56:44.902  INFO 13008 --- [main] SpringbootIntegrationMqttDemoApplication : No active profile set, falling back to 1 default profile: "default"
+2023-09-03 20:56:45.973  INFO 13008 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-03 20:56:46.007  INFO 13008 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-03 20:56:46.570  INFO 13008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9876 (http)
+2023-09-03 20:56:46.571  INFO 13008 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-09-03 20:56:46.572  INFO 13008 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-09-03 20:56:46.572  INFO 13008 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-09-03 20:56:46.580  INFO 13008 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-09-03 20:56:46.599  INFO 13008 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-03 20:56:46.600  INFO 13008 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-09-03 20:56:46.688  INFO 13008 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-03 20:56:46.688  INFO 13008 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1708 ms
+2023-09-03 20:56:47.630  INFO 13008 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-09-03 20:56:47.630  INFO 13008 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'spring-integration-mqtt.errorChannel' has 1 subscriber(s).
+2023-09-03 20:56:47.632  INFO 13008 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-09-03 20:56:47.632  INFO 13008 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {transformer} as a subscriber to the 'inboundTest' channel
+2023-09-03 20:56:47.632  INFO 13008 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.inboundTest' has 1 subscriber(s).
+2023-09-03 20:56:47.632  INFO 13008 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestMethodRouterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; defined in: 'class path resource [com/example/mqtt/handler/MyTestRouter.class]'; from source: 'bean method myTestMethodRouterFlow'
+2023-09-03 20:56:47.632  INFO 13008 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {router} as a subscriber to the 'myTestMethodRouterFlow.channel#0' channel
+2023-09-03 20:56:47.632  INFO 13008 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.myTestMethodRouterFlow.channel#0' has 1 subscriber(s).
+2023-09-03 20:56:47.632  INFO 13008 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestMethodRouterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; defined in: 'class path resource [com/example/mqtt/handler/MyTestRouter.class]'; from source: 'bean method myTestMethodRouterFlow'
+2023-09-03 20:56:47.632  INFO 13008 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttInboundConfiguration.defaultInboundHandler.serviceActivator} as a subscriber to the 'default' channel
+2023-09-03 20:56:47.632  INFO 13008 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.default' has 1 subscriber(s).
+2023-09-03 20:56:47.633  INFO 13008 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttInboundConfiguration.defaultInboundHandler.serviceActivator'
+2023-09-03 20:56:47.633  INFO 13008 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttOutboundConfiguration.mqttOutbound.serviceActivator} as a subscriber to the 'outbound' channel
+2023-09-03 20:56:47.633  INFO 13008 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.outbound' has 1 subscriber(s).
+2023-09-03 20:56:47.633  INFO 13008 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttOutboundConfiguration.mqttOutbound.serviceActivator'
+2023-09-03 20:56:47.633  INFO 13008 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {router:inboundMessageRouter.determineTargetChannels.router} as a subscriber to the 'inbound' channel
+2023-09-03 20:56:47.633  INFO 13008 --- [main] o.s.integration.channel.ExecutorChannel  : Channel 'spring-integration-mqtt.inbound' has 1 subscriber(s).
+2023-09-03 20:56:47.633  INFO 13008 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'inboundMessageRouter.determineTargetChannels.router'
+2023-09-03 20:56:47.633  INFO 13008 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:myTestRouter.replyEventsOutbound.serviceActivator} as a subscriber to the 'REPLY_EVENTS_OUTBOUND' channel
+2023-09-03 20:56:47.633  INFO 13008 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.REPLY_EVENTS_OUTBOUND' has 1 subscriber(s).
+2023-09-03 20:56:47.633  INFO 13008 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestRouter.replyEventsOutbound.serviceActivator'
+2023-09-03 20:56:47.633  INFO 13008 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:myTestServiceImpl.handleInboundTest1.serviceActivator} as a subscriber to the 'inboundTaskTest1' channel
+2023-09-03 20:56:47.633  INFO 13008 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.inboundTaskTest1' has 1 subscriber(s).
+2023-09-03 20:56:47.633  INFO 13008 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestServiceImpl.handleInboundTest1.serviceActivator'
+2023-09-03 20:56:47.633  INFO 13008 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:myTestServiceImpl.handleOutboundTest.serviceActivator} as a subscriber to the 'outboundTest' channel
+2023-09-03 20:56:47.633  INFO 13008 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.outboundTest' has 1 subscriber(s).
+2023-09-03 20:56:47.633  INFO 13008 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestServiceImpl.handleOutboundTest.serviceActivator'
+2023-09-03 20:56:47.633  INFO 13008 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:myTestServiceImpl.handleInboundTaskTest1ToDemo1.serviceActivator} as a subscriber to the 'inboundTaskTest1ToDemo1' channel
+2023-09-03 20:56:47.634  INFO 13008 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.inboundTaskTest1ToDemo1' has 1 subscriber(s).
+2023-09-03 20:56:47.634  INFO 13008 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestServiceImpl.handleInboundTaskTest1ToDemo1.serviceActivator'
+2023-09-03 20:56:47.634  INFO 13008 --- [main] ProxyFactoryBean$MethodInvocationGateway : started bean 'IMqttMessageGateway#publish(String, byte[])'
+2023-09-03 20:56:47.634  INFO 13008 --- [main] ProxyFactoryBean$MethodInvocationGateway : started bean 'IMqttMessageGateway#publish(String, byte[], int)'
+2023-09-03 20:56:47.634  INFO 13008 --- [main] o.s.i.gateway.GatewayProxyFactoryBean    : started bean 'IMqttMessageGateway'
+2023-09-03 20:56:48.021  INFO 13008 --- [main] .m.i.MqttPahoMessageDrivenChannelAdapter : started bean 'adapter'; defined in: 'class path resource [com/example/mqtt/config/MqttInboundConfiguration.class]'; from source: 'com.example.mqtt.config.MqttInboundConfiguration.mqttInbound()'
+2023-09-03 20:56:48.048  INFO 13008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9876 (http) with context path ''
+2023-09-03 20:56:48.058  INFO 13008 --- [main] SpringbootIntegrationMqttDemoApplication : Started SpringbootIntegrationMqttDemoApplication in 4.052 seconds (JVM running for 5.926)
+2023-09-03 20:57:23.993  INFO 13008 --- [http-nio-9876-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-03 20:57:23.995  INFO 13008 --- [http-nio-9876-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-03 20:57:23.996  INFO 13008 --- [http-nio-9876-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-03 20:57:26.034  INFO 13008 --- [pool-3-thread-1] o.s.i.h.s.MessagingMethodInvokerHelper   : Overriding default instance of MessageHandlerMethodFactory with provided one.
+2023-09-03 20:57:26.045  INFO 13008 --- [pool-3-thread-1] c.e.mqtt.handler.InboundMessageRouter    : received topic :mysys/product/1/status 	 payload :{
+  "tid": "123",
+  "bid":"123",
+  "method":"test1",
+  "timestamp":"1690348247659",
+  "data":"hello3333",
+  "gateway":"hello3333",
+  "needReply":0
+}
+2023-09-03 20:57:26.053 ERROR 13008 --- [pool-3-thread-1] o.s.integration.handler.LoggingHandler   : org.springframework.messaging.MessageDeliveryException: Dispatcher has no subscribers for channel 'spring-integration-mqtt.inboundTest1'.; nested exception is org.springframework.integration.MessageDispatchingException: Dispatcher has no subscribers, failedMessage=GenericMessage [payload=byte[148], headers={mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=ce701f45-03d6-9bdf-6807-54b5d51a21f5, mqtt_receivedTopic=mysys/product/1/status, mqtt_receivedQos=0, timestamp=1693745846032}], failedMessage=GenericMessage [payload=byte[148], headers={mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=ce701f45-03d6-9bdf-6807-54b5d51a21f5, mqtt_receivedTopic=mysys/product/1/status, mqtt_receivedQos=0, timestamp=1693745846032}]
+	at org.springframework.integration.channel.AbstractSubscribableChannel.doSend(AbstractSubscribableChannel.java:76)
+	at org.springframework.integration.channel.AbstractMessageChannel.send(AbstractMessageChannel.java:317)
+	at org.springframework.integration.channel.AbstractMessageChannel.send(AbstractMessageChannel.java:272)
+	at org.springframework.messaging.core.GenericMessagingTemplate.doSend(GenericMessagingTemplate.java:187)
+	at org.springframework.messaging.core.GenericMessagingTemplate.doSend(GenericMessagingTemplate.java:166)
+	at org.springframework.messaging.core.GenericMessagingTemplate.doSend(GenericMessagingTemplate.java:47)
+	at org.springframework.messaging.core.AbstractMessageSendingTemplate.send(AbstractMessageSendingTemplate.java:109)
+	at org.springframework.integration.router.AbstractMessageRouter.doSend(AbstractMessageRouter.java:213)
+	at org.springframework.integration.router.AbstractMessageRouter.handleMessageInternal(AbstractMessageRouter.java:195)
+	at org.springframework.integration.handler.AbstractMessageHandler.handleMessage(AbstractMessageHandler.java:55)
+	at org.springframework.integration.dispatcher.AbstractDispatcher.tryOptimizedDispatch(AbstractDispatcher.java:115)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.doDispatch(UnicastingDispatcher.java:133)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.access$000(UnicastingDispatcher.java:55)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher$1.run(UnicastingDispatcher.java:114)
+	at org.springframework.integration.util.ErrorHandlingTaskExecutor.lambda$execute$0(ErrorHandlingTaskExecutor.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.springframework.integration.MessageDispatchingException: Dispatcher has no subscribers, failedMessage=GenericMessage [payload=byte[148], headers={mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=ce701f45-03d6-9bdf-6807-54b5d51a21f5, mqtt_receivedTopic=mysys/product/1/status, mqtt_receivedQos=0, timestamp=1693745846032}]
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.doDispatch(UnicastingDispatcher.java:139)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.dispatch(UnicastingDispatcher.java:106)
+	at org.springframework.integration.channel.AbstractSubscribableChannel.doSend(AbstractSubscribableChannel.java:72)
+	... 17 more
+
+2023-09-03 20:58:19.987  INFO 13008 --- [pool-3-thread-2] c.e.mqtt.handler.InboundMessageRouter    : received topic :mysys/product/1/status 	 payload :{
+  "tid": "123",
+  "bid":"123",
+  "method":"test1",
+  "timestamp":"1690348247659",
+  "data":"hello3333",
+  "gateway":"hello3333",
+  "needReply":0
+}
+2023-09-03 20:58:19.988 ERROR 13008 --- [pool-3-thread-2] o.s.integration.handler.LoggingHandler   : org.springframework.messaging.MessageDeliveryException: Dispatcher has no subscribers for channel 'spring-integration-mqtt.inboundTest1'.; nested exception is org.springframework.integration.MessageDispatchingException: Dispatcher has no subscribers, failedMessage=GenericMessage [payload=byte[148], headers={mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=4ef90e6c-9902-8846-c038-7fe899a98928, mqtt_receivedTopic=mysys/product/1/status, mqtt_receivedQos=0, timestamp=1693745897153}], failedMessage=GenericMessage [payload=byte[148], headers={mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=4ef90e6c-9902-8846-c038-7fe899a98928, mqtt_receivedTopic=mysys/product/1/status, mqtt_receivedQos=0, timestamp=1693745897153}]
+	at org.springframework.integration.channel.AbstractSubscribableChannel.doSend(AbstractSubscribableChannel.java:76)
+	at org.springframework.integration.channel.AbstractMessageChannel.send(AbstractMessageChannel.java:317)
+	at org.springframework.integration.channel.AbstractMessageChannel.send(AbstractMessageChannel.java:272)
+	at org.springframework.messaging.core.GenericMessagingTemplate.doSend(GenericMessagingTemplate.java:187)
+	at org.springframework.messaging.core.GenericMessagingTemplate.doSend(GenericMessagingTemplate.java:166)
+	at org.springframework.messaging.core.GenericMessagingTemplate.doSend(GenericMessagingTemplate.java:47)
+	at org.springframework.messaging.core.AbstractMessageSendingTemplate.send(AbstractMessageSendingTemplate.java:109)
+	at org.springframework.integration.router.AbstractMessageRouter.doSend(AbstractMessageRouter.java:213)
+	at org.springframework.integration.router.AbstractMessageRouter.handleMessageInternal(AbstractMessageRouter.java:195)
+	at org.springframework.integration.handler.AbstractMessageHandler.handleMessage(AbstractMessageHandler.java:55)
+	at org.springframework.integration.dispatcher.AbstractDispatcher.tryOptimizedDispatch(AbstractDispatcher.java:115)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.doDispatch(UnicastingDispatcher.java:133)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.access$000(UnicastingDispatcher.java:55)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher$1.run(UnicastingDispatcher.java:114)
+	at org.springframework.integration.util.ErrorHandlingTaskExecutor.lambda$execute$0(ErrorHandlingTaskExecutor.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.springframework.integration.MessageDispatchingException: Dispatcher has no subscribers, failedMessage=GenericMessage [payload=byte[148], headers={mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=4ef90e6c-9902-8846-c038-7fe899a98928, mqtt_receivedTopic=mysys/product/1/status, mqtt_receivedQos=0, timestamp=1693745897153}]
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.doDispatch(UnicastingDispatcher.java:139)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.dispatch(UnicastingDispatcher.java:106)
+	at org.springframework.integration.channel.AbstractSubscribableChannel.doSend(AbstractSubscribableChannel.java:72)
+	... 17 more
+
+2023-09-03 21:22:55.792  INFO 91884 --- [main] SpringbootIntegrationMqttDemoApplication : Starting SpringbootIntegrationMqttDemoApplication using Java 11 on nzc with PID 91884 (F:\idea_project\springboot-integration-mqtt-demo\target\classes started by wyh in F:\idea_project\springboot-integration-mqtt-demo)
+2023-09-03 21:22:55.795  INFO 91884 --- [main] SpringbootIntegrationMqttDemoApplication : No active profile set, falling back to 1 default profile: "default"
+2023-09-03 21:22:56.597  INFO 91884 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-03 21:22:56.631  INFO 91884 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-03 21:22:57.210  INFO 91884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9876 (http)
+2023-09-03 21:22:57.212  INFO 91884 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-09-03 21:22:57.212  INFO 91884 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-09-03 21:22:57.212  INFO 91884 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-09-03 21:22:57.217  INFO 91884 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-09-03 21:22:57.235  INFO 91884 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-03 21:22:57.235  INFO 91884 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-09-03 21:22:57.319  INFO 91884 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-03 21:22:57.321  INFO 91884 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1465 ms
+2023-09-03 21:22:58.136  INFO 91884 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-09-03 21:22:58.136  INFO 91884 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'spring-integration-mqtt.errorChannel' has 1 subscriber(s).
+2023-09-03 21:22:58.137  INFO 91884 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-09-03 21:22:58.137  INFO 91884 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {transformer} as a subscriber to the 'enventsInboundEest' channel
+2023-09-03 21:22:58.137  INFO 91884 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.enventsInboundEest' has 1 subscriber(s).
+2023-09-03 21:22:58.137  INFO 91884 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestMethodRouterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; defined in: 'class path resource [com/example/mqtt/handler/EnventsTestRouter.class]'; from source: 'bean method myTestMethodRouterFlow'
+2023-09-03 21:22:58.137  INFO 91884 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {router} as a subscriber to the 'myTestMethodRouterFlow.channel#0' channel
+2023-09-03 21:22:58.137  INFO 91884 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.myTestMethodRouterFlow.channel#0' has 1 subscriber(s).
+2023-09-03 21:22:58.138  INFO 91884 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestMethodRouterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; defined in: 'class path resource [com/example/mqtt/handler/EnventsTestRouter.class]'; from source: 'bean method myTestMethodRouterFlow'
+2023-09-03 21:22:58.138  INFO 91884 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttInboundConfiguration.defaultInboundHandler.serviceActivator} as a subscriber to the 'default' channel
+2023-09-03 21:22:58.138  INFO 91884 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.default' has 1 subscriber(s).
+2023-09-03 21:22:58.138  INFO 91884 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttInboundConfiguration.defaultInboundHandler.serviceActivator'
+2023-09-03 21:22:58.138  INFO 91884 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttOutboundConfiguration.mqttOutbound.serviceActivator} as a subscriber to the 'outbound' channel
+2023-09-03 21:22:58.138  INFO 91884 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.outbound' has 1 subscriber(s).
+2023-09-03 21:22:58.138  INFO 91884 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttOutboundConfiguration.mqttOutbound.serviceActivator'
+2023-09-03 21:22:58.138  INFO 91884 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:enventsTestRouter.replyEventsOutbound.serviceActivator} as a subscriber to the 'REPLY_EVENTS_OUTBOUND' channel
+2023-09-03 21:22:58.138  INFO 91884 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.REPLY_EVENTS_OUTBOUND' has 1 subscriber(s).
+2023-09-03 21:22:58.138  INFO 91884 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'enventsTestRouter.replyEventsOutbound.serviceActivator'
+2023-09-03 21:22:58.138  INFO 91884 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {router:inboundMessageRouter.determineTargetChannels.router} as a subscriber to the 'inbound' channel
+2023-09-03 21:22:58.138  INFO 91884 --- [main] o.s.integration.channel.ExecutorChannel  : Channel 'spring-integration-mqtt.inbound' has 1 subscriber(s).
+2023-09-03 21:22:58.139  INFO 91884 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'inboundMessageRouter.determineTargetChannels.router'
+2023-09-03 21:22:58.139  INFO 91884 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:enventsTestServiceImpl.handleInboundTest1.serviceActivator} as a subscriber to the 'inboundTaskTest1' channel
+2023-09-03 21:22:58.139  INFO 91884 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.inboundTaskTest1' has 1 subscriber(s).
+2023-09-03 21:22:58.139  INFO 91884 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'enventsTestServiceImpl.handleInboundTest1.serviceActivator'
+2023-09-03 21:22:58.139  INFO 91884 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:enventsTestServiceImpl.handleOutboundTest.serviceActivator} as a subscriber to the 'outboundTest' channel
+2023-09-03 21:22:58.139  INFO 91884 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.outboundTest' has 1 subscriber(s).
+2023-09-03 21:22:58.139  INFO 91884 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'enventsTestServiceImpl.handleOutboundTest.serviceActivator'
+2023-09-03 21:22:58.140  INFO 91884 --- [main] ProxyFactoryBean$MethodInvocationGateway : started bean 'IMqttMessageGateway#publish(String, byte[])'
+2023-09-03 21:22:58.140  INFO 91884 --- [main] ProxyFactoryBean$MethodInvocationGateway : started bean 'IMqttMessageGateway#publish(String, byte[], int)'
+2023-09-03 21:22:58.140  INFO 91884 --- [main] o.s.i.gateway.GatewayProxyFactoryBean    : started bean 'IMqttMessageGateway'
+2023-09-03 21:22:58.522  INFO 91884 --- [main] .m.i.MqttPahoMessageDrivenChannelAdapter : started bean 'adapter'; defined in: 'class path resource [com/example/mqtt/config/MqttInboundConfiguration.class]'; from source: 'com.example.mqtt.config.MqttInboundConfiguration.mqttInbound()'
+2023-09-03 21:22:58.551  INFO 91884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9876 (http) with context path ''
+2023-09-03 21:22:58.561  INFO 91884 --- [main] SpringbootIntegrationMqttDemoApplication : Started SpringbootIntegrationMqttDemoApplication in 3.512 seconds (JVM running for 5.435)
+2023-09-03 21:23:55.811  INFO 87840 --- [main] SpringbootIntegrationMqttDemoApplication : Starting SpringbootIntegrationMqttDemoApplication using Java 11 on nzc with PID 87840 (F:\idea_project\springboot-integration-mqtt-demo\target\classes started by wyh in F:\idea_project\springboot-integration-mqtt-demo)
+2023-09-03 21:23:55.812  INFO 87840 --- [main] SpringbootIntegrationMqttDemoApplication : No active profile set, falling back to 1 default profile: "default"
+2023-09-03 21:23:56.604  INFO 87840 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-03 21:23:56.637  INFO 87840 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-03 21:23:57.129  INFO 87840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9876 (http)
+2023-09-03 21:23:57.130  INFO 87840 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-09-03 21:23:57.130  INFO 87840 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-09-03 21:23:57.130  INFO 87840 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-09-03 21:23:57.135  INFO 87840 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-09-03 21:23:57.154  INFO 87840 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-03 21:23:57.155  INFO 87840 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-09-03 21:23:57.246  INFO 87840 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-03 21:23:57.246  INFO 87840 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1378 ms
+2023-09-03 21:23:58.032  INFO 87840 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-09-03 21:23:58.033  INFO 87840 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'spring-integration-mqtt.errorChannel' has 1 subscriber(s).
+2023-09-03 21:23:58.033  INFO 87840 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-09-03 21:23:58.033  INFO 87840 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {transformer} as a subscriber to the 'enventsInboundEest' channel
+2023-09-03 21:23:58.033  INFO 87840 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.enventsInboundEest' has 1 subscriber(s).
+2023-09-03 21:23:58.033  INFO 87840 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestMethodRouterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; defined in: 'class path resource [com/example/mqtt/handler/EnventsTestRouter.class]'; from source: 'bean method myTestMethodRouterFlow'
+2023-09-03 21:23:58.033  INFO 87840 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {router} as a subscriber to the 'myTestMethodRouterFlow.channel#0' channel
+2023-09-03 21:23:58.033  INFO 87840 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.myTestMethodRouterFlow.channel#0' has 1 subscriber(s).
+2023-09-03 21:23:58.033  INFO 87840 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestMethodRouterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; defined in: 'class path resource [com/example/mqtt/handler/EnventsTestRouter.class]'; from source: 'bean method myTestMethodRouterFlow'
+2023-09-03 21:23:58.034  INFO 87840 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttInboundConfiguration.defaultInboundHandler.serviceActivator} as a subscriber to the 'default' channel
+2023-09-03 21:23:58.034  INFO 87840 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.default' has 1 subscriber(s).
+2023-09-03 21:23:58.034  INFO 87840 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttInboundConfiguration.defaultInboundHandler.serviceActivator'
+2023-09-03 21:23:58.034  INFO 87840 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttOutboundConfiguration.mqttOutbound.serviceActivator} as a subscriber to the 'outbound' channel
+2023-09-03 21:23:58.034  INFO 87840 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.outbound' has 1 subscriber(s).
+2023-09-03 21:23:58.034  INFO 87840 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttOutboundConfiguration.mqttOutbound.serviceActivator'
+2023-09-03 21:23:58.034  INFO 87840 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:enventsTestRouter.replyEventsOutbound.serviceActivator} as a subscriber to the 'REPLY_EVENTS_OUTBOUND' channel
+2023-09-03 21:23:58.034  INFO 87840 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.REPLY_EVENTS_OUTBOUND' has 1 subscriber(s).
+2023-09-03 21:23:58.034  INFO 87840 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'enventsTestRouter.replyEventsOutbound.serviceActivator'
+2023-09-03 21:23:58.034  INFO 87840 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {router:inboundMessageRouter.determineTargetChannels.router} as a subscriber to the 'inbound' channel
+2023-09-03 21:23:58.034  INFO 87840 --- [main] o.s.integration.channel.ExecutorChannel  : Channel 'spring-integration-mqtt.inbound' has 1 subscriber(s).
+2023-09-03 21:23:58.034  INFO 87840 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'inboundMessageRouter.determineTargetChannels.router'
+2023-09-03 21:23:58.034  INFO 87840 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:enventsTestServiceImpl.handleInboundTest1.serviceActivator} as a subscriber to the 'inboundTaskTest1' channel
+2023-09-03 21:23:58.034  INFO 87840 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.inboundTaskTest1' has 1 subscriber(s).
+2023-09-03 21:23:58.034  INFO 87840 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'enventsTestServiceImpl.handleInboundTest1.serviceActivator'
+2023-09-03 21:23:58.035  INFO 87840 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:enventsTestServiceImpl.handleOutboundTest.serviceActivator} as a subscriber to the 'outboundTest' channel
+2023-09-03 21:23:58.035  INFO 87840 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.outboundTest' has 1 subscriber(s).
+2023-09-03 21:23:58.035  INFO 87840 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'enventsTestServiceImpl.handleOutboundTest.serviceActivator'
+2023-09-03 21:23:58.035  INFO 87840 --- [main] ProxyFactoryBean$MethodInvocationGateway : started bean 'IMqttMessageGateway#publish(String, byte[])'
+2023-09-03 21:23:58.035  INFO 87840 --- [main] ProxyFactoryBean$MethodInvocationGateway : started bean 'IMqttMessageGateway#publish(String, byte[], int)'
+2023-09-03 21:23:58.035  INFO 87840 --- [main] o.s.i.gateway.GatewayProxyFactoryBean    : started bean 'IMqttMessageGateway'
+2023-09-03 21:23:58.428  INFO 87840 --- [main] .m.i.MqttPahoMessageDrivenChannelAdapter : started bean 'adapter'; defined in: 'class path resource [com/example/mqtt/config/MqttInboundConfiguration.class]'; from source: 'com.example.mqtt.config.MqttInboundConfiguration.mqttInbound()'
+2023-09-03 21:23:58.452  INFO 87840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9876 (http) with context path ''
+2023-09-03 21:23:58.461  INFO 87840 --- [main] SpringbootIntegrationMqttDemoApplication : Started SpringbootIntegrationMqttDemoApplication in 3.329 seconds (JVM running for 5.046)
+2023-09-03 21:24:17.251  INFO 87840 --- [http-nio-9876-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-03 21:24:17.253  INFO 87840 --- [http-nio-9876-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-03 21:24:17.254  INFO 87840 --- [http-nio-9876-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-03 21:24:20.389  INFO 87840 --- [pool-3-thread-1] o.s.i.h.s.MessagingMethodInvokerHelper   : Overriding default instance of MessageHandlerMethodFactory with provided one.
+2023-09-03 21:24:20.403  INFO 87840 --- [pool-3-thread-1] c.e.mqtt.handler.InboundMessageRouter    : received topic :mysys/envents_test 	 payload :{
+  "tid": "123",
+  "bid":"123",
+  "method":"test1",
+  "timestamp":"1690348247659",
+  "data":"hello3333",
+  "gateway":"hello3333",
+  "needReply":0
+}
+2023-09-03 21:24:22.553  INFO 87840 --- [pool-3-thread-1] o.s.i.h.s.MessagingMethodInvokerHelper   : Overriding default instance of MessageHandlerMethodFactory with provided one.
+2023-09-03 21:24:22.561  INFO 87840 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : handleInboundTest1
+2023-09-03 21:24:22.561  INFO 87840 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : dockSn:hello3333
+2023-09-03 21:24:22.561  INFO 87840 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : receiver:CommonTopicReceiver(tid=123, bid=123, method=test1, timestamp=1690348247659, data=hello3333, gateway=hello3333, needReply=0)
+2023-09-03 21:24:22.587  INFO 87840 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : headers:{mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=5bdbee3d-4f0e-d776-4392-77dd5abc517a, mqtt_receivedTopic=mysys/envents_test, mqtt_receivedQos=0, timestamp=1693747462552}
+2023-09-03 21:24:22.587  INFO 87840 --- [pool-3-thread-1] o.s.i.h.s.MessagingMethodInvokerHelper   : Overriding default instance of MessageHandlerMethodFactory with provided one.
+2023-09-03 21:24:22.590  INFO 87840 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : handleOutboundTest
+2023-09-03 21:24:22.590  INFO 87840 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : receiver:CommonTopicReceiver(tid=123, bid=123, method=test1, timestamp=1690348247659, data=hello3333, gateway=hello3333, needReply=0)
+2023-09-03 21:24:22.591  INFO 87840 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : headers:{mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=333e24fd-b6af-6aee-f9df-6de0f15b46b7, mqtt_receivedTopic=mysys/envents_test, mqtt_receivedQos=0, timestamp=1693747462587}
+2023-09-03 21:25:53.803  INFO 59864 --- [main] SpringbootIntegrationMqttDemoApplication : Starting SpringbootIntegrationMqttDemoApplication using Java 11 on nzc with PID 59864 (F:\idea_project\springboot-integration-mqtt-demo\target\classes started by wyh in F:\idea_project\springboot-integration-mqtt-demo)
+2023-09-03 21:25:53.806  INFO 59864 --- [main] SpringbootIntegrationMqttDemoApplication : No active profile set, falling back to 1 default profile: "default"
+2023-09-03 21:25:54.594  INFO 59864 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-03 21:25:54.624  INFO 59864 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-03 21:25:55.153  INFO 59864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9876 (http)
+2023-09-03 21:25:55.155  INFO 59864 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-09-03 21:25:55.155  INFO 59864 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-09-03 21:25:55.156  INFO 59864 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-09-03 21:25:55.162  INFO 59864 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-09-03 21:25:55.182  INFO 59864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-03 21:25:55.182  INFO 59864 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-09-03 21:25:55.275  INFO 59864 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-03 21:25:55.276  INFO 59864 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1421 ms
+2023-09-03 21:25:56.085  INFO 59864 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-09-03 21:25:56.085  INFO 59864 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'spring-integration-mqtt.errorChannel' has 1 subscriber(s).
+2023-09-03 21:25:56.085  INFO 59864 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-09-03 21:25:56.085  INFO 59864 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {transformer} as a subscriber to the 'enventsInboundEest' channel
+2023-09-03 21:25:56.085  INFO 59864 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.enventsInboundEest' has 1 subscriber(s).
+2023-09-03 21:25:56.085  INFO 59864 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestMethodRouterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; defined in: 'class path resource [com/example/mqtt/handler/EnventsTestRouter.class]'; from source: 'bean method myTestMethodRouterFlow'
+2023-09-03 21:25:56.085  INFO 59864 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {router} as a subscriber to the 'myTestMethodRouterFlow.channel#0' channel
+2023-09-03 21:25:56.085  INFO 59864 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.myTestMethodRouterFlow.channel#0' has 1 subscriber(s).
+2023-09-03 21:25:56.086  INFO 59864 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestMethodRouterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; defined in: 'class path resource [com/example/mqtt/handler/EnventsTestRouter.class]'; from source: 'bean method myTestMethodRouterFlow'
+2023-09-03 21:25:56.086  INFO 59864 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttInboundConfiguration.defaultInboundHandler.serviceActivator} as a subscriber to the 'default' channel
+2023-09-03 21:25:56.086  INFO 59864 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.default' has 1 subscriber(s).
+2023-09-03 21:25:56.086  INFO 59864 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttInboundConfiguration.defaultInboundHandler.serviceActivator'
+2023-09-03 21:25:56.086  INFO 59864 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttOutboundConfiguration.mqttOutbound.serviceActivator} as a subscriber to the 'outbound' channel
+2023-09-03 21:25:56.086  INFO 59864 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.outbound' has 1 subscriber(s).
+2023-09-03 21:25:56.086  INFO 59864 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttOutboundConfiguration.mqttOutbound.serviceActivator'
+2023-09-03 21:25:56.086  INFO 59864 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:enventsTestRouter.replyEventsOutbound.serviceActivator} as a subscriber to the 'REPLY_EVENTS_OUTBOUND' channel
+2023-09-03 21:25:56.086  INFO 59864 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.REPLY_EVENTS_OUTBOUND' has 1 subscriber(s).
+2023-09-03 21:25:56.086  INFO 59864 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'enventsTestRouter.replyEventsOutbound.serviceActivator'
+2023-09-03 21:25:56.086  INFO 59864 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {router:inboundMessageRouter.determineTargetChannels.router} as a subscriber to the 'inbound' channel
+2023-09-03 21:25:56.086  INFO 59864 --- [main] o.s.integration.channel.ExecutorChannel  : Channel 'spring-integration-mqtt.inbound' has 1 subscriber(s).
+2023-09-03 21:25:56.087  INFO 59864 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'inboundMessageRouter.determineTargetChannels.router'
+2023-09-03 21:25:56.087  INFO 59864 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:enventsTestServiceImpl.handleOutboundTest.serviceActivator} as a subscriber to the 'outboundTest' channel
+2023-09-03 21:25:56.087  INFO 59864 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.outboundTest' has 1 subscriber(s).
+2023-09-03 21:25:56.087  INFO 59864 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'enventsTestServiceImpl.handleOutboundTest.serviceActivator'
+2023-09-03 21:25:56.087  INFO 59864 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:enventsTestServiceImpl.handleInboundTest1.serviceActivator} as a subscriber to the 'inboundTaskTest1' channel
+2023-09-03 21:25:56.087  INFO 59864 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.inboundTaskTest1' has 1 subscriber(s).
+2023-09-03 21:25:56.087  INFO 59864 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'enventsTestServiceImpl.handleInboundTest1.serviceActivator'
+2023-09-03 21:25:56.088  INFO 59864 --- [main] ProxyFactoryBean$MethodInvocationGateway : started bean 'IMqttMessageGateway#publish(String, byte[])'
+2023-09-03 21:25:56.088  INFO 59864 --- [main] ProxyFactoryBean$MethodInvocationGateway : started bean 'IMqttMessageGateway#publish(String, byte[], int)'
+2023-09-03 21:25:56.088  INFO 59864 --- [main] o.s.i.gateway.GatewayProxyFactoryBean    : started bean 'IMqttMessageGateway'
+2023-09-03 21:25:56.473  INFO 59864 --- [main] .m.i.MqttPahoMessageDrivenChannelAdapter : started bean 'adapter'; defined in: 'class path resource [com/example/mqtt/config/MqttInboundConfiguration.class]'; from source: 'com.example.mqtt.config.MqttInboundConfiguration.mqttInbound()'
+2023-09-03 21:25:56.497  INFO 59864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9876 (http) with context path ''
+2023-09-03 21:25:56.505  INFO 59864 --- [main] SpringbootIntegrationMqttDemoApplication : Started SpringbootIntegrationMqttDemoApplication in 3.447 seconds (JVM running for 5.256)
+2023-09-03 21:26:09.711  INFO 59864 --- [http-nio-9876-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-03 21:26:09.712  INFO 59864 --- [http-nio-9876-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-03 21:26:09.713  INFO 59864 --- [http-nio-9876-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-03 21:26:13.429  INFO 59864 --- [pool-3-thread-1] o.s.i.h.s.MessagingMethodInvokerHelper   : Overriding default instance of MessageHandlerMethodFactory with provided one.
+2023-09-03 21:26:13.456  INFO 59864 --- [pool-3-thread-1] c.e.mqtt.handler.InboundMessageRouter    : received topic :mysys/envents_test 	 payload :{
+  "tid": "123",
+  "bid":"123",
+  "method":"test1",
+  "timestamp":"1690348247659",
+  "data":"hello3333",
+  "gateway":"hello3333",
+  "needReply":0
+}
+2023-09-03 21:26:13.574  INFO 59864 --- [pool-3-thread-1] o.s.i.h.s.MessagingMethodInvokerHelper   : Overriding default instance of MessageHandlerMethodFactory with provided one.
+2023-09-03 21:26:13.579  INFO 59864 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : handleInboundTest1
+2023-09-03 21:26:13.580  INFO 59864 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : dockSn:hello3333
+2023-09-03 21:26:13.580  INFO 59864 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : receiver:CommonTopicReceiver(tid=123, bid=123, method=test1, timestamp=1690348247659, data=hello3333, gateway=hello3333, needReply=0)
+2023-09-03 21:26:13.607  INFO 59864 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : headers:{mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=15b845e8-70f9-7fcb-b437-4d74a6378094, mqtt_receivedTopic=mysys/envents_test, mqtt_receivedQos=0, timestamp=1693747573572}
+2023-09-03 21:26:13.607  INFO 59864 --- [pool-3-thread-1] o.s.i.h.s.MessagingMethodInvokerHelper   : Overriding default instance of MessageHandlerMethodFactory with provided one.
+2023-09-03 21:26:13.608  INFO 59864 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : handleOutboundTest
+2023-09-03 21:26:13.608  INFO 59864 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : receiver:CommonTopicReceiver(tid=123, bid=123, method=test1, timestamp=1690348247659, data=hello3333, gateway=hello3333, needReply=0)
+2023-09-03 21:26:13.609  INFO 59864 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : headers:{mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=06c5642f-e189-9c39-f4b3-aefbf990547a, mqtt_receivedTopic=mysys/envents_test, mqtt_receivedQos=0, timestamp=1693747573607}
+2023-09-03 21:26:13.637  INFO 59864 --- [pool-3-thread-1] c.e.m.s.impl.MessageSenderServiceImpl    : send topic: envents_test/response, payload: CommonTopicResponse(tid=receiver.getTid(), bid=receiver.getBid(), method=reply, data=RequestsReply(result=0, output=null), timestamp=1693747573612)
+2023-09-03 22:10:49.644  INFO 67984 --- [main] SpringbootIntegrationMqttDemoApplication : Starting SpringbootIntegrationMqttDemoApplication using Java 11 on nzc with PID 67984 (F:\idea_project\springboot-integration-mqtt-demo\target\classes started by wyh in F:\idea_project\springboot-integration-mqtt-demo)
+2023-09-03 22:10:49.645  INFO 67984 --- [main] SpringbootIntegrationMqttDemoApplication : No active profile set, falling back to 1 default profile: "default"
+2023-09-03 22:10:50.625  INFO 67984 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-03 22:10:50.657  INFO 67984 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-03 22:10:51.220  INFO 67984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9876 (http)
+2023-09-03 22:10:51.222  INFO 67984 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-09-03 22:10:51.222  INFO 67984 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-09-03 22:10:51.223  INFO 67984 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-09-03 22:10:51.243  INFO 67984 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-09-03 22:10:51.265  INFO 67984 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-03 22:10:51.265  INFO 67984 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-09-03 22:10:51.355  INFO 67984 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-03 22:10:51.355  INFO 67984 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1651 ms
+2023-09-03 22:10:52.164  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-09-03 22:10:52.164  INFO 67984 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'spring-integration-mqtt.errorChannel' has 1 subscriber(s).
+2023-09-03 22:10:52.165  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-09-03 22:10:52.165  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {transformer} as a subscriber to the 'enventsInboundEest' channel
+2023-09-03 22:10:52.165  INFO 67984 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.enventsInboundEest' has 1 subscriber(s).
+2023-09-03 22:10:52.165  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestMethodRouterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; defined in: 'class path resource [com/example/mqtt/handler/EnventsTestRouter.class]'; from source: 'bean method myTestMethodRouterFlow'
+2023-09-03 22:10:52.165  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {router} as a subscriber to the 'myTestMethodRouterFlow.channel#0' channel
+2023-09-03 22:10:52.165  INFO 67984 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.myTestMethodRouterFlow.channel#0' has 1 subscriber(s).
+2023-09-03 22:10:52.166  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'myTestMethodRouterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; defined in: 'class path resource [com/example/mqtt/handler/EnventsTestRouter.class]'; from source: 'bean method myTestMethodRouterFlow'
+2023-09-03 22:10:52.166  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttInboundConfiguration.defaultInboundHandler.serviceActivator} as a subscriber to the 'default' channel
+2023-09-03 22:10:52.166  INFO 67984 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.default' has 1 subscriber(s).
+2023-09-03 22:10:52.166  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttInboundConfiguration.defaultInboundHandler.serviceActivator'
+2023-09-03 22:10:52.166  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttOutboundConfiguration.mqttOutbound.serviceActivator} as a subscriber to the 'outbound' channel
+2023-09-03 22:10:52.166  INFO 67984 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.outbound' has 1 subscriber(s).
+2023-09-03 22:10:52.166  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttOutboundConfiguration.mqttOutbound.serviceActivator'
+2023-09-03 22:10:52.166  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:enventsTestRouter.replyEventsOutbound.serviceActivator} as a subscriber to the 'REPLY_EVENTS_OUTBOUND' channel
+2023-09-03 22:10:52.166  INFO 67984 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.REPLY_EVENTS_OUTBOUND' has 1 subscriber(s).
+2023-09-03 22:10:52.166  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'enventsTestRouter.replyEventsOutbound.serviceActivator'
+2023-09-03 22:10:52.166  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {router:inboundMessageRouter.determineTargetChannels.router} as a subscriber to the 'inbound' channel
+2023-09-03 22:10:52.166  INFO 67984 --- [main] o.s.integration.channel.ExecutorChannel  : Channel 'spring-integration-mqtt.inbound' has 1 subscriber(s).
+2023-09-03 22:10:52.166  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'inboundMessageRouter.determineTargetChannels.router'
+2023-09-03 22:10:52.167  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:enventsTestServiceImpl.handleInboundTest1.serviceActivator} as a subscriber to the 'inboundTaskTest1' channel
+2023-09-03 22:10:52.167  INFO 67984 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.inboundTaskTest1' has 1 subscriber(s).
+2023-09-03 22:10:52.167  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'enventsTestServiceImpl.handleInboundTest1.serviceActivator'
+2023-09-03 22:10:52.167  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:enventsTestServiceImpl.handleOutboundTest.serviceActivator} as a subscriber to the 'outboundTest' channel
+2023-09-03 22:10:52.167  INFO 67984 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.outboundTest' has 1 subscriber(s).
+2023-09-03 22:10:52.167  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'enventsTestServiceImpl.handleOutboundTest.serviceActivator'
+2023-09-03 22:10:52.167  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:enventsTestServiceImpl.handleOutboundTestReply.serviceActivator} as a subscriber to the 'outboundTestReply' channel
+2023-09-03 22:10:52.168  INFO 67984 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.outboundTestReply' has 1 subscriber(s).
+2023-09-03 22:10:52.168  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'enventsTestServiceImpl.handleOutboundTestReply.serviceActivator'
+2023-09-03 22:10:52.168  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator:enventsTestServiceImpl.handleInboundTest1Reply.serviceActivator} as a subscriber to the 'inboundTaskTest2' channel
+2023-09-03 22:10:52.168  INFO 67984 --- [main] o.s.integration.channel.DirectChannel    : Channel 'spring-integration-mqtt.inboundTaskTest2' has 1 subscriber(s).
+2023-09-03 22:10:52.168  INFO 67984 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'enventsTestServiceImpl.handleInboundTest1Reply.serviceActivator'
+2023-09-03 22:10:52.168  INFO 67984 --- [main] ProxyFactoryBean$MethodInvocationGateway : started bean 'IMqttMessageGateway#publish(String, byte[])'
+2023-09-03 22:10:52.169  INFO 67984 --- [main] ProxyFactoryBean$MethodInvocationGateway : started bean 'IMqttMessageGateway#publish(String, byte[], int)'
+2023-09-03 22:10:52.169  INFO 67984 --- [main] o.s.i.gateway.GatewayProxyFactoryBean    : started bean 'IMqttMessageGateway'
+2023-09-03 22:10:52.545  INFO 67984 --- [main] .m.i.MqttPahoMessageDrivenChannelAdapter : started bean 'adapter'; defined in: 'class path resource [com/example/mqtt/config/MqttInboundConfiguration.class]'; from source: 'com.example.mqtt.config.MqttInboundConfiguration.mqttInbound()'
+2023-09-03 22:10:52.568  INFO 67984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9876 (http) with context path ''
+2023-09-03 22:10:52.577  INFO 67984 --- [main] SpringbootIntegrationMqttDemoApplication : Started SpringbootIntegrationMqttDemoApplication in 3.729 seconds (JVM running for 9.52)
+2023-09-03 22:11:00.680  INFO 67984 --- [pool-3-thread-1] o.s.i.h.s.MessagingMethodInvokerHelper   : Overriding default instance of MessageHandlerMethodFactory with provided one.
+2023-09-03 22:11:00.699  INFO 67984 --- [pool-3-thread-1] c.e.mqtt.handler.InboundMessageRouter    : received topic :mysys/A/envents_test 	 payload :{
+  "tid": "123",
+  "bid":"123",
+  "method":"test1",
+  "timestamp":"1690348247659",
+  "data":"hello3333",
+  "gateway":"hello3333",
+  "needReply":0
+}
+2023-09-03 22:11:00.839  INFO 67984 --- [pool-3-thread-1] o.s.i.h.s.MessagingMethodInvokerHelper   : Overriding default instance of MessageHandlerMethodFactory with provided one.
+2023-09-03 22:11:00.844  INFO 67984 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : handleInboundTest1
+2023-09-03 22:11:00.844  INFO 67984 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : dockSn:hello3333
+2023-09-03 22:11:00.844  INFO 67984 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : receiver:CommonTopicReceiver(tid=123, bid=123, method=test1, timestamp=1690348247659, data=hello3333, gateway=hello3333, needReply=0)
+2023-09-03 22:11:00.865  INFO 67984 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : headers:{mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=7563157f-7f58-da51-5007-1f1dc1e52612, mqtt_receivedTopic=mysys/A/envents_test, mqtt_receivedQos=0, timestamp=1693750260837}
+2023-09-03 22:11:00.865  INFO 67984 --- [pool-3-thread-1] o.s.i.h.s.MessagingMethodInvokerHelper   : Overriding default instance of MessageHandlerMethodFactory with provided one.
+2023-09-03 22:11:00.865  INFO 67984 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : handleOutboundTest 处理不用回复消息的通道消息
+2023-09-03 22:11:00.866  INFO 67984 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : receiver:CommonTopicReceiver(tid=123, bid=123, method=test1, timestamp=1690348247659, data=hello3333, gateway=hello3333, needReply=0)
+2023-09-03 22:11:00.866  INFO 67984 --- [pool-3-thread-1] c.e.m.s.impl.EnventsTestServiceImpl      : headers:{mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=e987df7a-9397-5d9e-a984-ca81f3589dcb, mqtt_receivedTopic=mysys/A/envents_test, mqtt_receivedQos=0, timestamp=1693750260865}
+2023-09-03 22:11:12.020  INFO 67984 --- [pool-3-thread-2] c.e.mqtt.handler.InboundMessageRouter    : received topic :mysys/A/envents_test 	 payload :{
+  "tid": "123",
+  "bid":"123",
+  "method":"test2",
+  "timestamp":"1690348247659",
+  "data":"hello3333",
+  "gateway":"hello3333",
+  "needReply":0
+}
+2023-09-03 22:11:12.027  INFO 67984 --- [pool-3-thread-2] o.s.i.h.s.MessagingMethodInvokerHelper   : Overriding default instance of MessageHandlerMethodFactory with provided one.
+2023-09-03 22:11:12.027  INFO 67984 --- [pool-3-thread-2] c.e.m.s.impl.EnventsTestServiceImpl      : handleInboundTest1
+2023-09-03 22:11:12.027  INFO 67984 --- [pool-3-thread-2] c.e.m.s.impl.EnventsTestServiceImpl      : dockSn:hello3333
+2023-09-03 22:11:12.027  INFO 67984 --- [pool-3-thread-2] c.e.m.s.impl.EnventsTestServiceImpl      : receiver:CommonTopicReceiver(tid=123, bid=123, method=test2, timestamp=1690348247659, data=hello3333, gateway=hello3333, needReply=0)
+2023-09-03 22:11:12.027  INFO 67984 --- [pool-3-thread-2] c.e.m.s.impl.EnventsTestServiceImpl      : headers:{mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=14d82735-d538-118d-e1fd-611a23665fb3, mqtt_receivedTopic=mysys/A/envents_test, mqtt_receivedQos=0, timestamp=1693750272026}
+2023-09-03 22:11:12.028  INFO 67984 --- [pool-3-thread-2] o.s.i.h.s.MessagingMethodInvokerHelper   : Overriding default instance of MessageHandlerMethodFactory with provided one.
+2023-09-03 22:11:12.028  INFO 67984 --- [pool-3-thread-2] c.e.m.s.impl.EnventsTestServiceImpl      : handleOutboundTest
+2023-09-03 22:11:12.028  INFO 67984 --- [pool-3-thread-2] c.e.m.s.impl.EnventsTestServiceImpl      : receiver:CommonTopicReceiver(tid=123, bid=123, method=test2, timestamp=1690348247659, data=hello3333, gateway=hello3333, needReply=0)
+2023-09-03 22:11:12.028  INFO 67984 --- [pool-3-thread-2] c.e.m.s.impl.EnventsTestServiceImpl      : headers:{mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=0fd649c3-5c04-b508-a9de-4c77c3b76936, mqtt_receivedTopic=mysys/A/envents_test, mqtt_receivedQos=0, timestamp=1693750272028}
+2023-09-03 22:11:12.059  INFO 67984 --- [pool-3-thread-2] c.e.m.s.impl.MessageSenderServiceImpl    : send topic: envents_test/response, payload: CommonTopicResponse(tid=receiver.getTid(), bid=receiver.getBid(), method=reply, data=RequestsReply(result=0, output=null), timestamp=1693750272033)

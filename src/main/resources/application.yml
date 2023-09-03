@@ -1,0 +1,34 @@
+server:
+  port: 9876
+spring:
+  application:
+    name: spring-integration-mqtt
+  servlet:
+    multipart:
+      max-file-size: 2GB
+      max-request-size: 2GB
+mqtt:
+  # BASIC parameters are required.
+  BASIC:
+    protocol: MQTT
+    host: 192.168.79.133
+    port: 1883
+    username:
+    password:
+    client-id: 123456
+    # If the protocol is ws/wss, this value is required.
+    path:
+    # Topics that need to be subscribed when initially connecting to mqtt, multiple topics are divided by ",".
+    inbound-topic: mysys/+/envents_test
+  DRC:
+    protocol: WS
+    host: 192.168.79.133
+    port: 8083
+    path: /mqtt
+
+
+logging:
+  level:
+    com.com.example.mqtt: debug
+  file:
+    name: logs/springboot-integration-mqtt-demo.log

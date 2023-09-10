@@ -31,6 +31,18 @@ public class MqttTopicController {
         return topic+"添加成功";
     }
 
+    @GetMapping("/pulish")
+    public String pulish(String topic){
+        CommonTopicResponse<Object> build = CommonTopicResponse.builder()
+                .tid("receiver.getTid()")
+                .bid("receiver.getBid()")
+                .method("reply")
+                .timestamp(System.currentTimeMillis())
+                .data(RequestsReply.success())
+                .build();
+        messageSenderService.publish(topic, build);
+        return "向"+topic+"发送消息";
+    }
     @GetMapping("/reply")
     public CommonTopicResponse reply(){
         CommonTopicResponse<Object> build = CommonTopicResponse.builder()

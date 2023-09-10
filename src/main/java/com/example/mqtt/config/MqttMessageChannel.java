@@ -21,10 +21,12 @@ public class MqttMessageChannel {
 
     @Autowired
     private Executor threadPool;
+
     @Bean(name = ChannelName.INBOUND)
     public MessageChannel inboundChannel() {
         return new ExecutorChannel(threadPool);
     }
+
     @Bean(name = ChannelName.ENVENTS_INBOUND_TEST)
     public MessageChannel enventsInboundTest() {
         return new DirectChannel();
@@ -42,5 +44,4 @@ public class MqttMessageChannel {
     public MessageChannel inboundTaskTest3() {
         return new DirectChannel();
     }
-
 }

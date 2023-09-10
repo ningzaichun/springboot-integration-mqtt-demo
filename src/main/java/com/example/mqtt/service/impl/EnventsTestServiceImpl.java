@@ -39,6 +39,14 @@ public class EnventsTestServiceImpl implements EnventsTestService {
         log.info("headers:{}",headers);
         return receiver;
     }
+    @ServiceActivator(inputChannel = ChannelName.OUTBOUND_TEST)
+    @Override
+    public void handleOutboundTest(CommonTopicReceiver receiver, MessageHeaders headers) {
+        log.info("handleOutboundTest 处理不用回复消息的通道消息");
+        log.info("receiver:{}",receiver);
+        log.info("headers:{}",headers);
+    }
+
 
     @Override
     @ServiceActivator(inputChannel = ChannelName.INBOUND_TASK_TEST2, outputChannel = ChannelName.OUTBOUND_TEST_REPLY)
@@ -51,16 +59,7 @@ public class EnventsTestServiceImpl implements EnventsTestService {
         return receiver;
     }
 
-    @ServiceActivator(inputChannel = ChannelName.OUTBOUND_TEST)
-    @Override
-    public void handleOutboundTest(CommonTopicReceiver receiver, MessageHeaders headers) {
-        log.info("handleOutboundTest 处理不用回复消息的通道消息");
-        log.info("receiver:{}",receiver);
-        log.info("headers:{}",headers);
-    }
-
-
-    @ServiceActivator(inputChannel = ChannelName.OUTBOUND_TEST_REPLY)
+    @ServiceActivator(inputChannel = ChannelName.OUTBOUND_TEST_REPLY,outputChannel = ChannelName.OUTBOUND)
     @Override
     public void handleOutboundTestReply(CommonTopicReceiver receiver, MessageHeaders headers) {
         log.info("handleOutboundTest");

@@ -8,9 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.Map;
 
 /**
- * @author sean
- * @version 0.3
- * @date 2022/2/21
+ * 写博客的时候，简化代码，此处的过滤链相关的东西，没有进行实现啦，具体可参考大疆的开源项目
  */
 public abstract class AbstractStateTopicHandler {
 
